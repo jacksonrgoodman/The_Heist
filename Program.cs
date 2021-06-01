@@ -7,8 +7,31 @@ namespace heist
         static void Main(string[] args)
         {
             // Store a value for the bank's difficulty level. Set this value to 100.
-            int difficultyLevel = 100;
+            //? At the beginning of the program, prompt the user to enter the difficulty level of the bank.
+            Console.Write("Pick a number between 0 and one hundred (bank difficulty)? ");
+            int difficultyLevel = 0;
+            bool difficulty = int.TryParse(Console.ReadLine(), out difficultyLevel);
+            try
+            {
 
+                while (!difficulty || difficultyLevel < 0 || difficultyLevel > 100)
+                {
+                    if (!difficulty)
+                    {
+                        Console.Write("Can you please enter a number? ");
+                    }
+                    else if (difficultyLevel < 0 || difficultyLevel > 100)
+                    {
+                        Console.Write("Please enter a number between 0 and one hundred: ");
+                    }
+                    difficulty = int.TryParse(Console.ReadLine(), out difficultyLevel);
+                }
+
+            }
+            catch
+            {
+                Console.WriteLine("you broke it");
+            }
             // Create a random number between -10 and 10 for the heist's luck value.
             int luckValue = new Random().Next(-10, 10);
 
@@ -113,6 +136,8 @@ namespace heist
 
             //* Run the scenario multiple times.
             //? Loop through the difficulty / skill level calculation based on the user-entered number of trial runs. Choose a new luck value each time.
+            int successes = 0;
+
             for (int i = 0; i < trials; i++)
             {
 
@@ -130,7 +155,7 @@ namespace heist
                 // Compare the number with the bank's difficulty level. If the team's skill level is greater than or equal to the bank's difficulty level, Display a success message, otherwise display a failure message.
                 if ((totalDifficulty) <= Squad.TeamLevel)
                 {
-
+                    successes++;
                     Console.WriteLine("Heist is a success!");
                 }
                 else
@@ -139,7 +164,9 @@ namespace heist
 
                 }
             }
-
+            //? At the end of the program, display a report showing the number of successful runs and the number of failed runs.
+            Console.WriteLine("Number of Successes: " + successes);
+            Console.WriteLine("Number of Failures: " + (trials - successes));
 
 
 
