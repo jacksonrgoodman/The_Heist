@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\users\\jacks\\workspace\\heist\\heist.csproj": {}
+    "C:\\Users\\Jeremiah Schugt\\workspace\\csharp\\The_Heist\\heist.csproj": {}
   },
   "projects": {
-    "C:\\users\\jacks\\workspace\\heist\\heist.csproj": {
+    "C:\\Users\\Jeremiah Schugt\\workspace\\csharp\\The_Heist\\heist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\users\\jacks\\workspace\\heist\\heist.csproj",
+        "projectUniqueName": "C:\\Users\\Jeremiah Schugt\\workspace\\csharp\\The_Heist\\heist.csproj",
         "projectName": "heist",
-        "projectPath": "C:\\users\\jacks\\workspace\\heist\\heist.csproj",
-        "packagesPath": "C:\\Users\\jacks\\.nuget\\packages\\",
-        "outputPath": "C:\\users\\jacks\\workspace\\heist\\obj\\",
+        "projectPath": "C:\\Users\\Jeremiah Schugt\\workspace\\csharp\\The_Heist\\heist.csproj",
+        "packagesPath": "C:\\Users\\Jeremiah Schugt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jeremiah Schugt\\workspace\\csharp\\The_Heist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jacks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jeremiah Schugt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
