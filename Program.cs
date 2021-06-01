@@ -96,10 +96,22 @@ namespace heist
             int trials;
             Console.Write("How many trials do you want to run? ");
 
-            bool newTrials = int.TryParse(Console.ReadLine(),out trials);
+            bool newTrials = int.TryParse(Console.ReadLine(), out trials);
+            while (!newTrials || trials < 1)
+            {
+                if (!newTrials)
+                {
+                    Console.Write("Can you please enter a number");
+                }
+                else if (trials < 0)
+                {
+                    Console.Write("Please enter a number greater than 0: ");
+                }
+                newTrials = int.TryParse(Console.ReadLine(), out trials);
+            }
 
             // Run the scenario multiple times.
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < trials; i++)
             {
 
                 // Create a random number between -10 and 10 for the heist's luck value.
