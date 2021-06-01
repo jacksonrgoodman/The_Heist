@@ -93,22 +93,37 @@ namespace heist
             }
             //? display team member information
             Squad.DisplayTeam();
-            // Add this number to the bank's difficulty level.
-            int totalDifficulty = difficultyLevel + luckValue;
-            Console.WriteLine("Bank Difficulty:" + " " + totalDifficulty);
-            //             Before displaying the success or failure message, display a report that shows.
-            // The team's combined skill level
-            // The bank's difficulty level
-            Console.WriteLine("Team Level:" + " " + Squad.TeamLevel);
-            // Compare the number with the bank's difficulty level. If the team's skill level is greater than or equal to the bank's difficulty level, Display a success message, otherwise display a failure message.
-            if ((totalDifficulty) <= Squad.TeamLevel)
+            int trials;
+            Console.Write("How many trials do you want to run? ");
+
+            bool newTrials = int.TryParse(Console.ReadLine(),out trials);
+
+            // Run the scenario multiple times.
+            for (int i = 0; i < 10; i++)
             {
 
-                Console.WriteLine("Heist is a success!");
-            }
-            else
-            {
-                Console.WriteLine("Heist failed! Send 'em to Gitmo.");
+                // Create a random number between -10 and 10 for the heist's luck value.
+                luckValue = new Random().Next(-10, 10);
+
+
+                // Add this number to the bank's difficulty level.
+                int totalDifficulty = difficultyLevel + luckValue;
+                Console.WriteLine("Bank Difficulty:" + " " + totalDifficulty);
+                //             Before displaying the success or failure message, display a report that shows.
+                // The team's combined skill level
+                // The bank's difficulty level
+                Console.WriteLine("Team Level:" + " " + Squad.TeamLevel);
+                // Compare the number with the bank's difficulty level. If the team's skill level is greater than or equal to the bank's difficulty level, Display a success message, otherwise display a failure message.
+                if ((totalDifficulty) <= Squad.TeamLevel)
+                {
+
+                    Console.WriteLine("Heist is a success!");
+                }
+                else
+                {
+                    Console.WriteLine("Heist failed! Send 'em to Gitmo.");
+
+                }
             }
 
 
