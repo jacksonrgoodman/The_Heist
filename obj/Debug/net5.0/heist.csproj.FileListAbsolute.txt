@@ -30,3 +30,19 @@ C:\Users\Jeremiah Schugt\workspace\csharp\The_Heist\obj\Debug\net5.0\heist.dll
 C:\Users\Jeremiah Schugt\workspace\csharp\The_Heist\obj\Debug\net5.0\ref\heist.dll
 C:\Users\Jeremiah Schugt\workspace\csharp\The_Heist\obj\Debug\net5.0\heist.pdb
 C:\Users\Jeremiah Schugt\workspace\csharp\The_Heist\obj\Debug\net5.0\heist.genruntimeconfig.cache
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.exe
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.deps.json
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.runtimeconfig.json
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.runtimeconfig.dev.json
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.dll
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\ref\heist.dll
+C:\users\jacks\workspace\The_Heist\bin\Debug\net5.0\heist.pdb
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.csprojAssemblyReference.cache
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.AssemblyInfoInputs.cache
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.AssemblyInfo.cs
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.csproj.CoreCompileInputs.cache
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.dll
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\ref\heist.dll
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.pdb
+C:\users\jacks\workspace\The_Heist\obj\Debug\net5.0\heist.genruntimeconfig.cache
