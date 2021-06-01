@@ -8,23 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\david\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jacks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\david\\workspace\\The_Heist\\heist.csproj",
+      "projectUniqueName": "C:\\users\\jacks\\workspace\\The_Heist\\heist.csproj",
       "projectName": "heist",
-      "projectPath": "C:\\Users\\david\\workspace\\The_Heist\\heist.csproj",
-      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\david\\workspace\\The_Heist\\obj\\",
+      "projectPath": "C:\\users\\jacks\\workspace\\The_Heist\\heist.csproj",
+      "packagesPath": "C:\\Users\\jacks\\.nuget\\packages\\",
+      "outputPath": "C:\\users\\jacks\\workspace\\The_Heist\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jacks\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
