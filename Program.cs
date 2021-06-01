@@ -6,6 +6,10 @@ namespace heist
     {
         static void Main(string[] args)
         {
+            // Store a value for the bank's difficulty level. Set this value to 100.
+            int difficultyLevel = 100;
+
+
             Console.WriteLine("Plan Your Heist!");
             // Prompt the user to enter a team member's name and save that name.
             Squad Squad = new Squad();
@@ -87,6 +91,17 @@ namespace heist
             }
             //? display team member information
             Squad.DisplayTeam();
+
+
+            // Compare the number with the bank's difficulty level. If the team's skill level is greater than or equal to the bank's difficulty level, Display a success message, otherwise display a failure message.
+            if (difficultyLevel <= Squad.TeamLevel)
+            {
+                Console.WriteLine("Heist is a success!");
+            }
+            else
+            {
+                Console.WriteLine("Heist failed! Send 'em to Gitmo.");
+            }
 
 
         }
