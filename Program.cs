@@ -94,6 +94,7 @@ namespace heist
             //? display team member information
             Squad.DisplayTeam();
             int trials;
+            //? After the user enters the team information, prompt them to enter the number of trial runs the program should perform.
             Console.Write("How many trials do you want to run? ");
 
             bool newTrials = int.TryParse(Console.ReadLine(), out trials);
@@ -110,7 +111,8 @@ namespace heist
                 newTrials = int.TryParse(Console.ReadLine(), out trials);
             }
 
-            // Run the scenario multiple times.
+            //* Run the scenario multiple times.
+            //? Loop through the difficulty / skill level calculation based on the user-entered number of trial runs. Choose a new luck value each time.
             for (int i = 0; i < trials; i++)
             {
 
