@@ -23,7 +23,7 @@ namespace heist
                 {
                     if (!isNum)
                     {
-                        Console.WriteLine("Can you please enter a number");
+                        Console.write("Can you please enter a number");
                     }
                     else if (SkillLevel < 0)
                     {
@@ -52,7 +52,7 @@ namespace heist
                 {
                     if (!isNum)
                     {
-                        Console.WriteLine("Can you please enter a number");
+                        Console.Write("Can you please enter a number");
                     }
                     else if (courageFactor < 0.0 || courageFactor > 2.0)
                     {
@@ -69,7 +69,7 @@ namespace heist
             }
 
             // display team member information
-            Console.WriteLine($"Tember: {Name} Skill level: {SkillLevel} Courage Factor{courageFactor}");
+            Console.WriteLine($"Tember: {Name} Skill level: {SkillLevel} Courage Factor: {courageFactor}");
 
         }
     }
