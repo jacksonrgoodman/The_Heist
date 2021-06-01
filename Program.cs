@@ -9,6 +9,8 @@ namespace heist
             // Store a value for the bank's difficulty level. Set this value to 100.
             int difficultyLevel = 100;
 
+            // Create a random number between -10 and 10 for the heist's luck value.
+            int luckValue = new Random().Next(-10, 10);
 
             Console.WriteLine("Plan Your Heist!");
             // Prompt the user to enter a team member's name and save that name.
@@ -91,17 +93,25 @@ namespace heist
             }
             //? display team member information
             Squad.DisplayTeam();
-
-
+            // Add this number to the bank's difficulty level.
+            int totalDifficulty = difficultyLevel + luckValue;
+            Console.WriteLine("Bank Difficulty:" + " " + totalDifficulty);
+            //             Before displaying the success or failure message, display a report that shows.
+            // The team's combined skill level
+            // The bank's difficulty level
+            Console.WriteLine("Team Level:" + " " + Squad.TeamLevel);
             // Compare the number with the bank's difficulty level. If the team's skill level is greater than or equal to the bank's difficulty level, Display a success message, otherwise display a failure message.
-            if (difficultyLevel <= Squad.TeamLevel)
+            if ((totalDifficulty) <= Squad.TeamLevel)
             {
+
                 Console.WriteLine("Heist is a success!");
             }
             else
             {
                 Console.WriteLine("Heist failed! Send 'em to Gitmo.");
             }
+
+
 
 
         }
